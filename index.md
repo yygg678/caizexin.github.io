@@ -1,15 +1,10 @@
-## Welcome to GitHub Pages
+## Bio 
 
-You can use the [editor on GitHub](https://github.com/caizexin/caizexin.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Zexin Cai received the B.S. (2016) in Software Engineering from Sun Yet-sen Univ.. He is currently pursuing his Ph.D. degree in Electrical and Computer Engineering at Duke Univ.. His primary research interests include text-to-speech synthesis, voice conversion. Previously, he worked  as a research assistant at Duke Kunshan Univ., where he worked on transfer learning in text-to-speech synthesis and customization of the speech recognition system.  
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Publications
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
 
 # Header 1
 ## Header 2
