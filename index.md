@@ -37,4 +37,4 @@ ECE 590.10.F19: Machine Learning and Deep Neural Nets
 
 ### Research
 
-- [multispeaker speech synthesis samples](
+- [multispeaker speech synthesis samples](https://caizexin.github.io/mlspk-syn-samples/index.html)
