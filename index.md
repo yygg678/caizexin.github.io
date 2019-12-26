@@ -17,10 +17,24 @@ Zexin Cai received the B.S. in Software Engineering from Sun Yet-sen University.
 
 
 
+### Skills
+
+**Programming Languages:** Python, C, C++, Shell, JAVA
+
+**Application Tool:** Tensorflow, Pytorch, KALDI, Matlab, LaTeX 
+
+
+
+### Course (during Ph.D.)
+
+ECE 581: RANDOM SIGNALS AND NOISE
+
+ECE 586: Vector Space Methods with Applications
+
+ECE 590.10.F19: Machine Learning and Deep Neural Nets  
+
 
 
 ### Research
 
-- [multispeaker speech synthesis samples](https://caizexin.github.io/mlspk-syn-samples/index.html)
-
-
+- [multispeaker speech synthesis samples](
