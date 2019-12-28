@@ -1,7 +1,5 @@
-## Bio 
-
 Zexin Cai received the B.S. in Software Engineering from Sun Yet-sen University. He is currently pursuing his Ph.D. degree in Electrical and Computer Engineering at Duke University. His primary research interests include text-to-speech synthesis, voice conversion. Previously, he worked  as a research assistant at Duke Kunshan University, where he worked on transfer learning in text-to-speech synthesis and customization of the speech recognition system.  
-
+---
 ### Publications
 
 - [**Zexin Cai**, Chuxiong Zhang, et al. "The DKU Speech Synthesis System for 2019 Blizzard Challenge." in  Blizzard Workshop 2019.](http://festvox.org/blizzard/bc2019/dku_blizzardchallenge2019.pdf)
@@ -19,19 +17,19 @@ Zexin Cai received the B.S. in Software Engineering from Sun Yet-sen University.
 
 ### Skills
 
-**Programming Languages:** Python, C, C++, Shell, JAVA
+- **Programming Languages:** Python, C, C++, Shell, JAVA
 
-**Application Tool:** Tensorflow, Pytorch, KALDI, Matlab, LaTeX 
+- **Application Tool:** Tensorflow, Pytorch, KALDI, Matlab, LaTeX 
 
 
 
 ### Course (during Ph.D.)
 
-ECE 581: RANDOM SIGNALS AND NOISE
+- ECE 581: RANDOM SIGNALS AND NOISE
 
-ECE 586: Vector Space Methods with Applications
+- ECE 586: Vector Space Methods with Applications
 
-ECE 590.10.F19: Machine Learning and Deep Neural Nets  
+- ECE 590.10.F19: Machine Learning and Deep Neural Nets  
 
 
 
