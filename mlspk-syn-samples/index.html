@@ -1,177 +1,261 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Audio samples from "Transfer Learning from Speaker Verification to Multispeaker Text-To-Speech Synthesis"</title>
-    <link rel="stylesheet" type="text/css" href="../../stylesheet.css"/>
-    <link rel="shortcut icon" href="../../images/taco.png">
+    <title>From Speaker Verification to Multispeaker Speech Synthesis, Fully Transfer by Feedback Constraint</title>
   </head>
   <body>
     <div>
+      <article>
+      <header> <h2>From Speaker Verification to Multispeaker Speech Synthesis, Fully Transfer by Feedback Constraint</h2> </header>
+    </article>
+    <p><b>Paper:</b> <a href="">TobeRelease</a></p>
+    <p><b>Authors</b>: Zexin Cai, Chuxiong Zhang, Lin Yang, Ming Li</p>
+    <div><b>Abstract:</b> High-fidelity speech can be synthesized by text-to-speech models that consist of an encoder-decoder based neural network and a neural vocoder in recent years. However, accessing and controlling speech attributes such as speaker identity, prosody, and emotion in a text-to-speech model continues to remain a challenge. In this paper, an approach involving adversarial training is proposed for multispeaker speech synthesis. We manage to transfer the knowledge profoundly from the speaker verification task to the speech synthesis task by adversarial training. The adversarial training is taken by an added loss related to the speaker identity, which is centralized to improve the speaker similarity between the synthesized speech and its natural reference audio. The model is trained and evaluated on publicly available datasets. Experimental results, including visualization on speaker embedding space, show significant improvement in terms of speaker identity cloning in the spectrogram level. </div>
+    <table>
+      <thead>
+      <tr></tr>  <tr></tr>  <tr></tr>  <tr></tr>  <tr></tr>
+      <tr>
+        <th> Ground truth </th> <th> Baseline </th> <th> Baseline - Text Indep </th>  <th> FC - Text Dep </th> <th> FC - Text Indep </th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr></tr>  <tr></tr><tr></tr>  <tr></tr>
+    <tr>
+      <td colspan="5"><span><b>VCTK Test Set</b></td></span>
+    </tr>
+    <tr>
+      <td colspan="5"><span>p225: we have seen a copy of the report. </td></span>
+    </tr>
+    <tr>
+      <td><audio controls=""><source src="speech_sample/vctk_test/org_p225_135.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_p225_135.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_ran_p225_135.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_p225_135.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_ran_p225_135.wav" type="audio/wav"></audio></td>
+    </tr>
+    <tr>
+      <td colspan="5"><span>p231: tourism is a vital industry for scotland. </td></span>
+    </tr>
+    <tr>
+      <td><audio controls=""><source src="speech_sample/vctk_test/org_p231_255.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_p231_255.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_ran_p231_255.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_p231_255.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_ran_p231_255.wav" type="audio/wav"></audio></td>
+    </tr>
+    <tr>
+      <td colspan="5"><span>p340: He had been surprised by the local reaction. </td></span>
+    </tr>
+    <tr>
+      <td><audio controls=""><source src="speech_sample/vctk_test/org_p340_240.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_p340_240.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_ran_p340_240.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_p340_240.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_ran_p340_240.wav" type="audio/wav"></audio></td>
+    </tr>
+    <tr>
+      <td colspan="5"><span>p360: There is an ongoing problem with this company. </td></span>
+    </tr>
+    <tr>
+      <td><audio controls=""><source src="speech_sample/vctk_test/org_p360_175.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_p360_175.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_ran_p360_175.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_p360_175.wav" type="audio/wav"></audio></td>
+      sub<td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_ran_p360_175.wav" type="audio/wav"></audio></td>
+    </tr>
+    <tr>
+      <td colspan="5"><span>p361: Cost is a factor, but not the only one.</td></span>
+    </tr>
+    <tr>
+      <td><audio controls=""><source src="speech_sample/vctk_test/org_p361_119.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_p361_119.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_ran_p361_119.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_p361_119.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_ran_p361_119.wav" type="audio/wav"></audio></td>
+    </tr>
+    <tr>
+      <td colspan="5"><span>p363: We are not commenting at the moment.</td></span>
+    </tr>
+    <tr>
+      <td><audio controls=""><source src="speech_sample/vctk_test/org_p363_074.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_p363_074.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_ran_p363_074.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_p363_074.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_ran_p363_074.wav" type="audio/wav"></audio></td>
+    </tr>
+    <tr>
+      <td colspan="5"><span>p364: I love you so very much.</td></span>
+    </tr>
+    <tr>
+      <td><audio controls=""><source src="speech_sample/vctk_test/org_p364_028.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_p364_028.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_ran_p364_028.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_p364_028.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_ran_p364_028.wav" type="audio/wav"></audio></td>
+    </tr>
+    <tr>
+      <td colspan="5"><span>p376: It is a crisis of human rights, a crisis of leadership.</td></span>
+    </tr>
+    <tr>
+      <td><audio controls=""><source src="speech_sample/vctk_test/org_p376_255.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_p376_255.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_ran_p376_255.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_p376_255.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_ran_p376_255.wav" type="audio/wav"></audio></td>
+    </tr>
 
-      <h2>Multispeaker Speech Synthesis Audio Samples</h2>
-
-<table>
-  <thead>
     <tr>
-      <th>Mandarin male</th><th>Mandarin female</th><th>VCTK male</th><th>VCTK female</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td colspan="6"><span><b>Reference:</b></td></span>
-    </tr>
-    <tr>
-      <td><audio controls=""><source src="mandarin_male_org.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="mandarin_female_org.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="vctk_male_org.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="vctk_female_org.wav" type="audio/wav"></audio></td>
-    </tr>
-    <tr>
-      <td colspan="6"><span><b>Vocoder:</b></td></span>
-    </tr>
-    <tr>
-      <td><audio controls=""><source src="mandarin_male_vocoder.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="mandarin_female_vocoder.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="vctk_male_vocoder.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="vctk_female_vocoder.wav" type="audio/wav"></audio></td>
-    </tr>
-
-    <tr>
-      <td colspan="6"><span><b>Synthesized:</b></span></td>
-    </tr>
-    <tr>
-      <td colspan="6"><span>Mandarin: 再过一个月就是2020年了.</span></td>
-    </tr>
-    <tr>
-      <td colspan="6"><span>English: There were many editions of these works still being used in the nineteenth century.</span></td>
-    </tr>
-    <tr>
-      <td colspan="6"><span>vocoder: Griffin-Lim</span></td>
-    </tr>
-    <tr>
-      <td><audio controls=""><source src="mandarin_male_syn_gf.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="mandarin_female_syn_gf.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="vctk_male_syn_gf.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="vctk_female_syn_gf.wav" type="audio/wav"></audio></td>
-    </tr>
-    <tr><td colspan="6"><span>vocoder: WaveRnn</span></td></tr>
-    <tr>
-      <td><audio controls=""><source src="mandarin_male_syn_nv.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="mandarin_female_syn_nv.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="vctk_male_syn_nv.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="vctk_female_syn_nv.wav" type="audio/wav"></audio></td>
-    </tr>
+      <td colspan="5"><span><b>Visualization on speaker embedding space</b></td></span>
+    </tr>    
   </tbody>
 </table>
 
+<div> <img src="vctk_exps.png" style="height:35%;"></img> </div>
+<p><i> Speaker embedding visualization on VCTK test set: (a) synthesized utterances using text-dependent speaker embedding without joint loss; (b) synthesized utterances using text-dependent embedding with joint loss; (c) synthesized utterances using text-independent speaker embedding without joint loss; (d) synthesized utterances using text-independent embedding with joint loss;</i></p>
+
+
+<table>
+  <thead>
+  <tr></tr>  <tr></tr>  <tr></tr>  <tr></tr>  <tr></tr>
+  <tr>
+    <th> Ground truth </th> <th> Baseline </th> <th> Baseline - Text Indep </th>  <th> FC - Text Dep </th> <th> FC - Text Indep </th>
+  </tr>
+</thead>
+<tbody>
+
+<tr></tr>  <tr></tr><tr></tr>  <tr></tr>
 <tr>
-      <td colspan="6"><span><b>1/2/2020 Update:</b></td></span>
+  <th> Ground truth </th> <th> Baseline </th> <th> Baseline - Text Indep </th>  <th> FC - Text Dep </th> <th> FC - Text Indep </th>
 </tr>
-
-<table>
-  <thead>
-    <tr>
-      <th>Mandarin male</th><th>Mandarin female</th><th>waveglow male</th><th>waveglow female</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td colspan="6"><span><b>Reference:</b></td></span>
-    </tr>
-    <tr>
-      <td><audio controls=""><source src="1_2/mandarin_male_org.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="1_2/mandarin_female_org.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="1_2/male.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="1_2/female.wav" type="audio/wav"></audio></td>
-    </tr>
-    <tr>
-      <td colspan="6"><span><b>Vocoder:</b></td></span>
-    </tr>
-    <tr>
-      <td><audio controls=""><source src="1_2/mandarin_male_vocoder.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="1_2/mandarin_female_vocoder.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="1_2/syn_male.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="1_2/syn_female.wav" type="audio/wav"></audio></td>
-    </tr>
-
-    <tr>
-      <td colspan="6"><span><b>Synthesized:</b></span></td>
-    </tr>
-    <tr>
-      <td colspan="6"><span>Mandarin: 再过一个月就是2020年了.</span></td>
-    </tr>
-    <tr>
-      <td colspan="6"><span>vocoder: Griffin-Lim</span></td>
-    </tr>
-    <tr>
-      <td><audio controls=""><source src="1_2/mandarin_male_syn_gf.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="1_2/mandarin_female_syn_gf.wav" type="audio/wav"></audio></td>
-
-    </tr>
-    <tr><td colspan="6"><span>vocoder: WaveRnn</span></td></tr>
-    <tr>
-      <td><audio controls=""><source src="1_2/mandarin_male_syn_nv.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="1_2/mandarin_female_syn_nv.wav" type="audio/wav"></audio></td>
-    </tr>
-  </tbody>
-</table>
-
-
 <tr>
-      <td colspan="6"><span><b>1/14/2020 Update:</b></td></span>
+  <td colspan="5"><span><b>VCTK Validation set</b></td></span>
 </tr>
-
-<table>
-  <thead>
-    <tr>
-      <th>Mandarin male</th><th>Mandarin female</th><th>waveglow male 01/14</th><th>waveglow female</th> <th>waveglow male 01/12</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td colspan="6"><span><b>Reference:</b></td></span>
-    </tr>
-    <tr>
-      <td><audio controls=""><source src="1_14/mandarin_male_org.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="1_14/mandarin_female_org.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="1_14/male_org.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="1_14/female_org.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="1_14/male_org.wav" type="audio/wav"></audio></td>
-    </tr>
-    <tr>
-      <td colspan="6"><span><b>Vocoder:</b></td></span>
-    </tr>
-    <tr>
-      <td><audio controls=""><source src="1_14/mandarin_male_vocoder.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="1_14/mandarin_female_vocoder.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="1_14/male_wg_syn.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="1_14/female_wg_syn.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="1_14/male_syn_wg_2.wav" type="audio/wav"></audio></td>
-    </tr>
-
-    <tr>
-      <td colspan="6"><span><b>Synthesized:</b></span></td>
-    </tr>
-    <tr>
-      <td colspan="6"><span>Mandarin: 再过一个月就是2020年了.</span></td>
-    </tr>
-    <tr>
-      <td colspan="6"><span>vocoder: Griffin-Lim</span></td>
-    </tr>
-    <tr>
-      <td><audio controls=""><source src="1_14/mandarin_male_syn_gf.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="1_14/mandarin_female_syn_gf.wav" type="audio/wav"></audio></td>
-
-    </tr>
-    <tr><td colspan="6"><span>vocoder: WaveRnn</span></td></tr>
-    <tr>
-      <td><audio controls=""><source src="1_14/mandarin_male_syn_nv.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="1_14/mandarin_female_syn_nv.wav" type="audio/wav"></audio></td>
-    </tr>
-  </tbody>
+<tr>
+  <td colspan="5"><span>p259: It was not hard to feel some sympathy for Baxter yesterday.</td></span>
+</tr>
+<tr>
+  <td><audio controls=""><source src="speech_sample/vctk_val/org_p259_318.wav" type="audio/wav"></audio></td>
+  <td><audio controls=""><source src="speech_sample/vctk_val/syn_unjl_p259_318.wav" type="audio/wav"></audio></td>
+  <td><audio controls=""><source src="speech_sample/vctk_val/syn_unjl_ran_p259_318.wav" type="audio/wav"></audio></td>
+  <td><audio controls=""><source src="speech_sample/vctk_val/syn_jl_p259_318.wav" type="audio/wav"></audio></td>
+  <td><audio controls=""><source src="speech_sample/vctk_val/syn_jl_ran_p259_318.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+  <td colspan="5"><span>p288: However, Dundee deserved to win this game.</td></span>
+</tr>
+<tr>
+  <td><audio controls=""><source src="speech_sample/vctk_val/org_p288_213.wav" type="audio/wav"></audio></td>
+  <td><audio controls=""><source src="speech_sample/vctk_val/syn_unjl_p288_213.wav" type="audio/wav"></audio></td>
+  <td><audio controls=""><source src="speech_sample/vctk_val/syn_unjl_ran_p288_213.wav" type="audio/wav"></audio></td>
+  <td><audio controls=""><source src="speech_sample/vctk_val/syn_jl_p288_213.wav" type="audio/wav"></audio></td>
+  <td><audio controls=""><source src="speech_sample/vctk_val/syn_jl_ran_p288_213.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+  <td colspan="5"><span>p314: We have no choice but to shut down. </td></span>
+</tr>
+<tr>
+  <td><audio controls=""><source src="speech_sample/vctk_val/org_p314_050.wav" type="audio/wav"></audio></td>
+  <td><audio controls=""><source src="speech_sample/vctk_val/syn_unjl_p314_050.wav" type="audio/wav"></audio></td>
+  <td><audio controls=""><source src="speech_sample/vctk_val/syn_unjl_ran_p314_050.wav" type="audio/wav"></audio></td>
+  <td><audio controls=""><source src="speech_sample/vctk_val/syn_jl_p314_050.wav" type="audio/wav"></audio></td>
+  <td><audio controls=""><source src="speech_sample/vctk_val/syn_jl_ran_p314_050.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+  <td colspan="5"><span>p374: But every two minutes it was exploding.</td></span>
+</tr>
+<tr>
+  <td><audio controls=""><source src="speech_sample/vctk_val/org_p374_159.wav" type="audio/wav"></audio></td>
+  <td><audio controls=""><source src="speech_sample/vctk_val/syn_unjl_p374_159.wav" type="audio/wav"></audio></td>
+  <td><audio controls=""><source src="speech_sample/vctk_val/syn_unjl_ran_p374_159.wav" type="audio/wav"></audio></td>
+  <td><audio controls=""><source src="speech_sample/vctk_val/syn_jl_p374_159.wav" type="audio/wav"></audio></td>
+  <td><audio controls=""><source src="speech_sample/vctk_val/syn_jl_ran_p374_159.wav" type="audio/wav"></audio></td>
+</tr>
+<tr></tr>  <tr></tr><tr></tr>  <tr></tr>
+<tr>
+<td colspan="5"><span><b>Cross-domain: Librispeech</b></td></span>
+</tr>
+<tr>
+<td colspan="5"><span>1322: This Damosel loved another knight that held her to paramour </td></span>
+</tr>
+<tr>
+<td><audio controls=""><source src="speech_sample/librispeech/org_1322-137588-0040_00.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_unjl_1322-137588-0040_00.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_unjl_ran_1322-137588-0040_00.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_jl_1322-137588-0040_00.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_jl_ran_1322-137588-0040_00.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<td colspan="5"><span>1343: Those lawyers have given up all idea of proceeding against her. </td></span>
+</tr>
+<tr>
+<td><audio controls=""><source src="speech_sample/librispeech/org_1343-158796-0027_00.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_unjl_1343-158796-0027_00.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_unjl_ran_1343-158796-0027_00.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_jl_1343-158796-0027_00.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_jl_ran_1343-158796-0027_00.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<td colspan="5"><span>2053: If so, Kate also should be included in the punishment. </td></span>
+</tr>
+<tr>
+<td><audio controls=""><source src="speech_sample/librispeech/org_2053-138888-0013_02.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_unjl_2053-138888-0013_02.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_unjl_ran_2053-138888-0013_02.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_jl_2053-138888-0013_02.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_jl_ran_2053-138888-0013_02.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<td colspan="5"><span>2085: And he succeeded in selling them to a newly arrived German. </td></span>
+</tr>
+<tr>
+<td><audio controls=""><source src="speech_sample/librispeech/org_2085-147971-0025_00.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_unjl_2085-147971-0025_00.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_unjl_ran_2085-147971-0025_00.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_jl_2085-147971-0025_00.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_jl_ran_2085-147971-0025_00.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<td colspan="5"><span>2230: We'll dine together first Peter's got a club dinner. </td></span>
+</tr>
+<tr>
+<td><audio controls=""><source src="speech_sample/librispeech/org_2230-148550-0026_02.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_unjl_2230-148550-0026_02.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_unjl_ran_2230-148550-0026_02.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_jl_2230-148550-0026_02.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_jl_ran_2230-148550-0026_02.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<td colspan="5"><span>2769: He led the way to the front room suddenly he stopped. </td></span>
+</tr>
+<tr>
+<td><audio controls=""><source src="speech_sample/librispeech/org_2769-176256-0010_01.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_unjl_2769-176256-0010_01.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_unjl_ran_2769-176256-0010_01.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_jl_2769-176256-0010_01.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_jl_ran_2769-176256-0010_01.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<td colspan="5"><span>6115: The fact that in some places successive terraces are found does not disprove the theory. </td></span>
+</tr>
+<tr>
+<td><audio controls=""><source src="speech_sample/librispeech/org_6115-58776-0046_01.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_unjl_6115-58776-0046_01.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_unjl_ran_6115-58776-0046_01.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_jl_6115-58776-0046_01.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_jl_ran_6115-58776-0046_01.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<td colspan="5"><span>7245: But we stood whispering in the house and all we said was saved. </td></span>
+</tr>
+<tr>
+<td><audio controls=""><source src="speech_sample/librispeech/org_7245-104890-0063_02.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_unjl_7245-104890-0063_02.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_unjl_ran_7245-104890-0063_02.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_jl_7245-104890-0063_02.wav" type="audio/wav"></audio></td>
+<td><audio controls=""><source src="speech_sample/librispeech/syn_jl_ran_7245-104890-0063_02.wav" type="audio/wav"></audio></td>
+</tr>
+</tbody>
 </table>
-
-
-    </div>
-  </body>
+</div>
+</body>
 </html>
