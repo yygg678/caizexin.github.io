@@ -1,16 +1,16 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>From Speaker Verification to Multispeaker Speech Synthesis, Fully Transfer by Feedback Constraint</title>
+    <title>From Speaker Verification to Multispeaker Speech Synthesis, Fully Transfer with Feedback Constraint</title>
   </head>
   <body>
     <div>
       <article>
-      <header> <h2>From Speaker Verification to Multispeaker Speech Synthesis, Fully Transfer by Feedback Constraint</h2> </header>
+      <header> <h2>From Speaker Verification to Multispeaker Speech Synthesis, Fully Transfer with Feedback Constraint</h2> </header>
     </article>
-    <p><b>Paper:</b> <a href="">TobeReleased</a></p>
+    <p><b>Paper:</b> <a href="">TobeRelease</a></p>
     <p><b>Authors</b>: Zexin Cai, Chuxiong Zhang, Lin Yang, Ming Li</p>
-    <div><b>Abstract:</b> High-fidelity speech can be synthesized by text-to-speech models that consist of an encoder-decoder based neural network and a neural vocoder in recent years. However, accessing and controlling speech attributes such as speaker identity, prosody, and emotion in a text-to-speech model continues to remain a challenge. In this paper, an approach involving adversarial training is proposed for multispeaker speech synthesis. We manage to transfer the knowledge profoundly from the speaker verification task to the speech synthesis task by adversarial training. The adversarial training is taken by an added loss related to the speaker identity, which is centralized to improve the speaker similarity between the synthesized speech and its natural reference audio. The model is trained and evaluated on publicly available datasets. Experimental results, including visualization on speaker embedding space, show significant improvement in terms of speaker identity cloning in the spectrogram level. </div>
+    <div><b>Abstract:</b>  High-fidelity speech can be synthesized by end-to-end text-to-speech models in recent years. However, accessing and controlling speech attributes such as speaker identity, prosody, and emotion in a text-to-speech system remains a challenge. This paper presents a system involving feedback constraint for multispeaker speech synthesis. We manage to enhance the knowledge transfer from the speaker verification to the speech synthesis by engaging the speaker verification network. The constraint is taken by an added loss related to the speaker identity, which is centralized to improve the speaker similarity between the synthesized speech and its natural reference audio. The model is trained and evaluated on publicly available datasets. Experimental results, including visualization on speaker embedding space, show significant improvement in terms of speaker identity cloning in the spectrogram level. </div>
     <table>
       <thead>
       <tr></tr>  <tr></tr>  <tr></tr>  <tr></tr>  <tr></tr>
@@ -110,8 +110,8 @@
   </tbody>
 </table>
 
-<div> <img src="vctk_exps.png" style="height:35%;"></img> </div>
-<p><i> Speaker embedding visualization on VCTK test set: (a) synthesized utterances using text-dependent speaker embedding without joint loss; (b) synthesized utterances using text-dependent embedding with joint loss; (c) synthesized utterances using text-independent speaker embedding without joint loss; (d) synthesized utterances using text-independent embedding with joint loss;</i></p>
+<div> <img src="vctk_textdep_cmp.png" style="height:35%;"></img> </div>
+<p><i> Speaker embedding visualization for VCTK test set. (a) baseline & text-dependent speaker embedding; (b) FC & text-dependent speaker embedding; (c) baseline & text-independent speaker embedding; (d) FC & text-independent speaker embedding; </i></p>
 
 
 <table>
@@ -123,6 +123,10 @@
 </thead>
 <tbody>
 
+<tr></tr>  <tr></tr><tr></tr>  <tr></tr>
+<tr>
+  <th> Ground truth </th> <th> Baseline </th> <th> Baseline - Text Indep </th>  <th> FC - Text Dep </th> <th> FC - Text Indep </th>
+</tr>
 <tr>
   <td colspan="5"><span><b>VCTK Validation set</b></td></span>
 </tr>
@@ -211,16 +215,6 @@
 <td><audio controls=""><source src="speech_sample/librispeech/syn_jl_ran_2085-147971-0025_00.wav" type="audio/wav"></audio></td>
 </tr>
 <tr>
-<td colspan="5"><span>2230: We'll dine together first Peter's got a club dinner. </td></span>
-</tr>
-<tr>
-<td><audio controls=""><source src="speech_sample/librispeech/org_2230-148550-0026_02.wav" type="audio/wav"></audio></td>
-<td><audio controls=""><source src="speech_sample/librispeech/syn_unjl_2230-148550-0026_02.wav" type="audio/wav"></audio></td>
-<td><audio controls=""><source src="speech_sample/librispeech/syn_unjl_ran_2230-148550-0026_02.wav" type="audio/wav"></audio></td>
-<td><audio controls=""><source src="speech_sample/librispeech/syn_jl_2230-148550-0026_02.wav" type="audio/wav"></audio></td>
-<td><audio controls=""><source src="speech_sample/librispeech/syn_jl_ran_2230-148550-0026_02.wav" type="audio/wav"></audio></td>
-</tr>
-<tr>
 <td colspan="5"><span>2769: He led the way to the front room suddenly he stopped. </td></span>
 </tr>
 <tr>
@@ -250,6 +244,8 @@
 <td><audio controls=""><source src="speech_sample/librispeech/syn_jl_7245-104890-0063_02.wav" type="audio/wav"></audio></td>
 <td><audio controls=""><source src="speech_sample/librispeech/syn_jl_ran_7245-104890-0063_02.wav" type="audio/wav"></audio></td>
 </tr>
+<div> <img src="lib_textdep_cmp.png" style="height:35%;"></img> </div>
+<p><i> Speaker embedding visualization for Librispeech test set. (a) baseline & text-dependent speaker embedding; (b) FC & text-dependent speaker embedding; (c) baseline & text-independent speaker embedding; (d) FC & text-independent speaker embedding; </i></p>
 </tbody>
 </table>
 </div>
