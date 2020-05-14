@@ -4,6 +4,7 @@ Zexin Cai received the B.S. in Software Engineering from Sun Yet-sen University.
 
 ### Publications
 
+- [**Zexin Cai**, Chuxiong Zhang, et al. "From Speaker Verification to Multispeaker Speech Synthesis, Deep Transfer with Feedback Constraint," \[Submitted to Interspeech 2020\] ](https://arxiv.org/abs/2005.04587)
 - [**Zexin Cai**, Chuxiong Zhang, et al. "The DKU Speech Synthesis System for 2019 Blizzard Challenge." in  Blizzard Workshop 2019.](http://festvox.org/blizzard/bc2019/dku_blizzardchallenge2019.pdf)
 
 - [**Zexin Cai**, Yaogen Yang, et al. "Polyphone Disambiguation for Mandarin Chinese Using Conditional Neural Network with Multi-level Embedding Features" in INTERSPEECH 2019.](https://arxiv.org/abs/1907.01749)
@@ -33,8 +34,11 @@ Zexin Cai received the B.S. in Software Engineering from Sun Yet-sen University.
 
 - ECE 590.10.F19: Machine Learning and Deep Neural Nets  
 
+- ECE 590D.01D.S20: Reinforcement Learning 
 
 
-### Research
+### Research & Projects
 
-- [multispeaker speech synthesis samples](https://caizexin.github.io/mlspk-syn-samples/index.html)
+- [multispeaker speech synthesis](https://caizexin.github.io/mlspk-syn-samples/index.html)
+
+- [Blizzard Challenge 2020](https://caizexin.github.io/blizzard_2020/index.html)
